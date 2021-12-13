@@ -1,0 +1,15 @@
+com\StripeApiTask\Model\InvoiceModel.class
+com\StripeApiTask\Configuration\ReadPropertyFile.class
+com\StripeApiTask\Services\InvoiceService.class
+com\StripeApiTask\Model\PaymentSettings.class
+com\StripeApiTask\Model\Period.class
+com\StripeApiTask\Services\ConnectionInit.class
+com\StripeApiTask\Model\Lines.class
+com\StripeApiTask\Model\Price.class
+com\StripeApiTask\Model\Datum.class
+com\StripeApiTask\Configuration\ConnectionConfig.class
+com\StripeApiTask\Model\Metadata.class
+com\StripeApiTask\Model\StatusTransitions.class
+com\StripeApiTask\Model\InvoiceModel$InvoiceModelBuilder.class
+com\StripeApiTask\Model\AutomaticTax.class
+com\StripeApiTask\Services\IOInit.class

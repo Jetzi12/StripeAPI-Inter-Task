@@ -6,6 +6,7 @@ import java.net.HttpURLConnection;
 public class ConnectionConfig {
     private String authorizationKey;
 
+
     public ConnectionConfig() throws IOException {
         authorizationKey = new ReadPropertyFile().getProperties("authorizationKey");
     }
