@@ -17,6 +17,7 @@ class DownloadInvoiceTest extends Specification {
         InvoiceModel invoice = invoiceService.getInvoice(invoiceId);
 
         then:
+        println invoice
         !invoice.equals(null);
     }
 }

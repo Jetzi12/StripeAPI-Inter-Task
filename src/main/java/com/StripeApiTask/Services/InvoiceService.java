@@ -13,6 +13,7 @@ public class InvoiceService {
     private final String createNewInvoicePropVal = "createInvoiceApiURL";
     private final String getInvoicePropVal = "getInvoiceApiURL";
     private final String addInvoiceItemPropVal = "addItemToInvoiceApiURL";
+    private final String slash = "/";
 
     public InvoiceService() {
         this.responseFromApi = "";
@@ -25,7 +26,7 @@ public class InvoiceService {
     }
 
     public InvoiceModel getInvoice(String invoiceId) throws IOException {
-        URL url = new URL((reader.getProperties(getInvoicePropVal.toString()).toString() + "/" + invoiceId));
+        URL url = new URL((reader.getProperties(getInvoicePropVal.toString()).toString() + slash + invoiceId));
         HttpURLConnection connection = new ConnectionInit().initConnection(HttpMethod.GET.toString(),url);
         return new IOInit().initInputReaderGetResponse(connection);
     }

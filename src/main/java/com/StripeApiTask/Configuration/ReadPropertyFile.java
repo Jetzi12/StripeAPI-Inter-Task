@@ -9,10 +9,8 @@ public class ReadPropertyFile {
     private final String PROP_FILE_NAME = "config.properties";
 
     public String getProperties(String propertyValue) throws IOException {
-        String result = "";
         Properties properties = new Properties();
         String propFileName = PROP_FILE_NAME;
-
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
 
         if (inputStream != null) {
@@ -20,7 +18,6 @@ public class ReadPropertyFile {
         } else {
             throw new FileNotFoundException("There isn't any file with that name");
         }
-        result = properties.getProperty(propertyValue);
-        return result;
+        return properties.getProperty(propertyValue);
     }
 }
