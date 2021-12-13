@@ -11,7 +11,7 @@ public class ConnectionInit {
     public HttpURLConnection initConnection(String methodForConnection, URL url) throws IOException {
         HttpURLConnection connection = (HttpURLConnection)url.openConnection();
         new ConnectionConfig().setConnectionProperties(connection);
-        connection.setDoOutput(HttpMethod.POST.toString().equals(methodForConnection)); //to do stałej
+        connection.setDoOutput(HttpMethod.POST.toString().equals(methodForConnection));
         return connection;
     }
 }
